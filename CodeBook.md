@@ -28,6 +28,8 @@ Similarly,
 
 The x and y values are combined with the subjects for each row in 'all_test' and 'all_train', then these two tables are combined in 'all_data'. The column names in 'all_data' are transformed to correspond to the definitions in 'features'.
 
+To get extract the right column names in the right formats, a variable 'feat_length' is created to get the right number of features that will need to be used as column names, and then a loop through the features casted as characters is then loaded in order into the column names of 'all_data'.
+
 Section 2 of the code uses grepl to isolate the mean and standard deviation measurements, eliminating all other columns. 
 'is_mean_sd' is a boolean vector that is TRUE wherever 'all_data' has a column of either mean or standard deviation measurements
 'is_header_mean_sd' additionally sets the first two columns to TRUE since they are the activity and subject headers and should not be excluded from the final data set
