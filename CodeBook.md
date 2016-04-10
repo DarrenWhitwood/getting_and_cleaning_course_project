@@ -3,15 +3,15 @@ This file CodeBook.md is intended to, as specified in the assignment, "describe 
 Note first that the first line after the explanation within run_analysis.R itself needs to be modified by the user to specify the directory where the user has stored the UCI data.
 
 The script is divided up into 6 sections defined by the assignment in Coursera, laid out in run_analysis.R as follows:
-# 1. Merges the training and the test sets to create one data set.
-# 2. Extracts only the measurements on the mean and standard deviation
-# for each measurement.
-# 3. Uses descriptive activity names to name the activities in the data
-#  set
-# 4. Appropriately labels the data set with descriptive variable names.
-# 5. From the data set in step 4, creates a second, independent tidy
-#  data set with the average of each variable for each activity and each
-#  subject.
+ 1. Merges the training and the test sets to create one data set.
+ 2. Extracts only the measurements on the mean and standard deviation
+ for each measurement.
+ 3. Uses descriptive activity names to name the activities in the data
+  set
+ 4. Appropriately labels the data set with descriptive variable names.
+ 5. From the data set in step 4, creates a second, independent tidy
+  data set with the average of each variable for each activity and each
+  subject.
 
 The variables in section 1 correspond to the relevant data pulled from the UCI data files:
 'subject_train' contains the subjects of the training data
